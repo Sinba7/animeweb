@@ -1,4 +1,39 @@
 
+var section0 = document.getElementById('fate-list'),
+    section1 = document.getElementById('fate-zero'),
+    section2 = document.getElementById('fate-stay-night'),
+    section3 = document.getElementById('fate-apocrypha');
+
+function changeSection0() {
+    section0.className = '';
+    section1.className = 'anime-intro-hide';
+    section2.className = 'anime-intro-hide';
+    section3.className = 'anime-intro-hide';
+}
+
+function changeSection1() {
+    section0.className = 'anime-intro-hide';
+    section1.className = 'anime-intro';
+    section2.className = 'anime-intro-hide';
+    section3.className = 'anime-intro-hide';
+}
+
+function changeSection2() {
+    section0.className = 'anime-intro-hide';
+    section1.className = 'anime-intro-hide';
+    section2.className = 'anime-intro';
+    section3.className = 'anime-intro-hide';
+}
+
+function changeSection3() {
+    section0.className = 'anime-intro-hide';
+    section1.className = 'anime-intro-hide';
+    section2.className = 'anime-intro-hide';
+    section3.className = 'anime-intro';
+}
+
+
+
 var tab1 = document.getElementById('tab1'),
   tab2 = document.getElementById('tab2'),
   tab3 = document.getElementById('tab3'),

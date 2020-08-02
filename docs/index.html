@@ -6,40 +6,40 @@
         <link rel="stylesheet" href="styles/styles.css" />
     </head>
     <body>
+        <div id='fate-list'>
+          <h1>Fate Series Anime Show</h1>
+          <p> Hi, I'm NY. Welcome to my anime website. Let me take you to a tour of my favorite anime series -- Fate. </p>
+          <p style="text-align:left; margin-left:35px; margin-right:35px"> The Fate series is an anime collective that tells stories about Holy Grail Wars, which involve Masters, generally accomplished magi, summoning Servants, Heroic Spirits, and battling each other until the last remaining pair can claim the purported Holy Grail. Here, I will introduce three main stories in this series: the Fourth, the Fifth and the Great Grail War. They are listed in chronological order in the menu below. Please feel free to explore the details of each story by clicking on its cover.</p>
+          <h2 id="menu"  style="text-align:left; margin-left: 35px; margin-right:35px">Series Menu</h3>
+          <div class="image-row">
+            
+            <div class="image-column">
+              <a href="#fate-zero">
+                <img src="./javascript/images/fate-zero/cover.jpg" style="width:100%" onclick="changeSection1()"/>
+              </a>
+              <p>Fate / Zero</p>
+              <p>(the Fourth Holy Grail War)</p>
+            </div>
 
-        <h1> Fate Series Anime Show</h1>
-        <p> Hi, I'm NY. Welcome to my anime website. Let me take you to a tour of my favorite anime series -- Fate. </p>
-        <p style="text-align:left; margin-left:35px; margin-right:35px"> The Fate series is an anime collective that tells stories about Holy Grail Wars, which involve Masters, generally accomplished magi, summoning Servants, Heroic Spirits, and battling each other until the last remaining pair can claim the purported Holy Grail. Here, I will introduce the top 3 Holy Grail War stories in this series.</p>
-      
-        <div class="image-row">
+            <div class="image-column">
+              <a href="#fate-stay-night">
+                <img src="./javascript/images/fate-stay-night/cover-UBW.jpg" style="width:100%" onclick="changeSection2()"/>
+              </a>
+              <p>Fate / Stay Night [Unlimited Blade Works]</p>
+              <p>(the Fifth Holy Grail War)</p>
+            </div>
           
-          <div class="image-column">
-            <a href="#fate-zero">
-              <img src="./javascript/images/fate-zero/cover.jpg" style="width:100%" />
-            </a>
-            <p>Fate / Zero</p>
-            <p>(the Fourth Holy Grail War)</p>
+            <div class="image-column">
+              <a href="#fate-apocrypha">
+                <img src="./javascript/images/fate-apocrypha/cover0.jpg" style="width:100%" onclick="changeSection3()"/>
+              </a>
+              <p>Fate / Apocrypha</p>
+              <p>(the Great Holy Grail War)</p>
+            </div>
           </div>
-
-          <div class="image-column">
-            <a href="#fate-stay-night">
-              <img src="./javascript/images/fate-stay-night/cover-UBW.jpg" style="width:100%" />
-            </a>
-            <p>Fate / Stay Night [Unlimited Blade Works]</p>
-            <p>(the Fifth Holy Grail War)</p>
-          </div>
+        </div>  
         
-          <div class="image-column">
-            <a href="#fate-apocrypha">
-              <img src="./javascript/images/fate-apocrypha/cover0.jpg" style="width:100%" />
-            </a>
-            <p>Fate / Apocrypha</p>
-            <p>(the Great Holy Grail War)</p>
-          </div>
-
-        </div>
-        
-        <div class="anime-intro" id="fate-zero">
+        <div class="anime-intro-hide" id="fate-zero">
 
           <h2 style='text-align:left'> Fate Zero</p></h2>
           <div class="intro-row" >
@@ -591,12 +591,12 @@
                   3. Arondight, a durable sword that boosts the battle attributes of Lancelot by one rank each.
                 </td>
               </tr>
-
             </table>
           </div>
+          <a href="#menu"><h3 style="text-align:right" onclick="changeSection0()">Back to Menu</h3></a>
         </div>
 
-        <div class="anime-intro" id="fate-stay-night">
+        <div class="anime-intro-hide" id="fate-stay-night">
 
           <h2 style='text-align:left'> Fate Stay Night: UBW </h2>
           <div class="intro-row" >
@@ -1148,9 +1148,10 @@
               </tr>
             </table>
           </div>
+          <a href="#menu"><h3 style="text-align:right" onclick="changeSection0()">Back to Menu</h3></a>
         </div>
 
-        <div class="anime-intro" id="fate-apocrypha">
+        <div class="anime-intro-hide" id="fate-apocrypha">
 
           <h2 style='text-align:left'> Fate/Apocrypha </h2>
           <div class="intro-row" >
@@ -2353,7 +2354,8 @@
               </div>
             </div>
           </div>
+          <a href="#menu"><h3 style="text-align:right" onclick="changeSection0()">Back to Menu</h3></a>
         </div>
-        <script async src="./javascript/index.js"></script>    
+      <script async src="./javascript/index.js"></script>    
     </body>
 </html>
