@@ -9,7 +9,7 @@
         <div id='fate-list'>
           <h1>Fate Series Anime Show</h1>
           <p> Hi, I'm NY. Welcome to my anime website. Let me take you to a tour of my favorite anime series -- Fate. </p>
-          <p style="text-align:left; margin-left:35px; margin-right:35px"> The Fate series is an anime collective that tells stories about Holy Grail Wars, which involve Masters, generally accomplished magi, summoning Servants, Heroic Spirits, and battling each other until the last remaining pair can claim the purported Holy Grail. Here, I will introduce three main stories in this series: the Fourth, the Fifth and the Great Grail War. They are listed in chronological order in the menu below. Please feel free to explore the details of each story by clicking on its cover.</p>
+          <p style="text-align:left; margin-left:35px; margin-right:35px"> The Fate series is an anime collective that tells stories about Holy Grail Wars, which involve Masters, generally accomplished magi, summoning Servants, Heroic Spirits, and battling each other until the last remaining pair can claim the purported Holy Grail. Here, I will introduce three main stories in this series: the Fourth, the Fifth and the Great Grail War. They are listed in chronological order in the menu below. By clicking on the poster, you can explore the details of each story.</p>
           <h2 id="menu"  style="text-align:left; margin-left: 35px; margin-right:35px">Series Menu</h3>
           <div class="image-row">
             
@@ -96,6 +96,7 @@
                 <td>Kiritsugu Emiya</td>
                 <td id="barplot-saber-fz">
                   <script>
+                    var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                     var data = [{"name":"NP", "value":6}, {"name":"Luck", "value":2}, {"name":"Mana", "value":5}, {"name":"Agility", "value":5}, {"name":"Endurance", "value":5},{"name":"Strength", "value":4}];
                     var margin = {
                         top: 15,
@@ -152,7 +153,8 @@
                             return x(d.value) + 3;
                         })
                         .text(function (d) {
-                            return d.value;
+                            return plevel_dict[d.value]
+                            // return d.value;
                         });
                   </script>
                 </td>
@@ -169,6 +171,7 @@
                 <td>Archer</td>
                 <td id="barplot-archer-fz">
                   <script>
+                    var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                     var data = [{"name":"NP", "value":7}, {"name":"Luck", "value":5}, {"name":"Mana", "value":5}, {"name":"Agility", "value":4}, {"name":"Endurance", "value":4},{"name":"Strength", "value":4}];
                     var margin = {
                         top: 15,
@@ -225,7 +228,8 @@
                             return x(d.value) + 3;
                         })
                         .text(function (d) {
-                            return d.value;
+                            return plevel_dict[d.value]
+                            // return d.value;
                         });
                   </script>
                 </td>
@@ -242,6 +246,7 @@
                 <td>Waver Velvet</td>
                 <td id="barplot-rider-fz">
                   <script>
+                    var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                     var data = [{"name":"NP", "value":6}, {"name":"Luck", "value":5.5}, {"name":"Mana", "value":3}, {"name":"Agility", "value":2}, {"name":"Endurance", "value":5},{"name":"Strength", "value":4}];
                     var margin = {
                         top: 15,
@@ -298,7 +303,8 @@
                             return x(d.value) + 3;
                         })
                         .text(function (d) {
-                            return d.value;
+                            return plevel_dict[d.value]
+                            // return d.value;
                         });
                   </script>
                 </td>
@@ -314,6 +320,7 @@
                 <td>Kayneth El-Melloi Archibald</td>                
                 <td id="barplot-lancer-fz">
                   <script>
+                    var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                     var data = [{"name":"NP", "value":4}, {"name":"Luck", "value":1}, {"name":"Mana", "value":2}, {"name":"Agility", "value":5.5}, {"name":"Endurance", "value":3},{"name":"Strength", "value":4}];
                     var margin = {
                         top: 15,
@@ -370,7 +377,8 @@
                             return x(d.value) + 3;
                         })
                         .text(function (d) {
-                            return d.value;
+                            return plevel_dict[d.value]
+                            // return d.value;
                         });
                   </script>
                 </td>
@@ -386,6 +394,7 @@
                 <td>Ryuunosuke Uryuu</td>                
                 <td id="barplot-caster-fz">
                   <script>
+                    var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                     var data = [{"name":"NP", "value":5.5}, {"name":"Luck", "value":1}, {"name":"Mana", "value":3}, {"name":"Agility", "value":2}, {"name":"Endurance", "value":1},{"name":"Strength", "value":2}];
                     var margin = {
                         top: 15,
@@ -442,7 +451,8 @@
                             return x(d.value) + 3;
                         })
                         .text(function (d) {
-                            return d.value;
+                            // return d.value;
+                            return plevel_dict[d.value]
                         });
                   </script>
                 </td>
@@ -456,6 +466,7 @@
                 <td>Kirei Kotomine</td>
                 <td id="barplot-aassasin-fz">
                   <script>
+                    var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                     var data = [{"name":"NP", "value":4}, {"name":"Luck", "value":1}, {"name":"Mana", "value":3}, {"name":"Agility", "value":5}, {"name":"Endurance", "value":2},{"name":"Strength", "value":3}];
                     var margin = {
                         top: 15,
@@ -512,7 +523,8 @@
                             return x(d.value) + 3;
                         })
                         .text(function (d) {
-                            return d.value;
+                            // return d.value;
+                            return plevel_dict[d.value]
                         });
                   </script>
                 </td>
@@ -526,6 +538,7 @@
                 <td>Kariya Matou</td>
                 <td id="barplot-berserker-fz">
                   <script>
+                    var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                     var data = [{"name":"NP", "value":5}, {"name":"Luck", "value":4}, {"name":"Mana", "value":3}, {"name":"Agility", "value":5.5}, {"name":"Endurance", "value":5},{"name":"Strength", "value":5}];
                     var margin = {
                         top: 15,
@@ -582,7 +595,8 @@
                             return x(d.value) + 3;
                         })
                         .text(function (d) {
-                            return d.value;
+                            // return d.value;
+                            return plevel_dict[d.value]
                         });
                   </script>
                 </td>
@@ -657,6 +671,7 @@
                 <td>Shirou Emiya</td>
                 <td id="barplot-saber-fsn">
                   <script>
+                    var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                     var data = [{"name":"NP", "value":3}, {"name":"Luck", "value":4}, {"name":"Mana", "value":4}, {"name":"Agility", "value":3}, {"name":"Endurance", "value":3},{"name":"Strength", "value":4}];
                     var margin = {
                         top: 15,
@@ -713,7 +728,8 @@
                             return x(d.value) + 3;
                         })
                         .text(function (d) {
-                            return d.value;
+                            // return d.value;
+                            return plevel_dict[d.value]
                         });
                   </script>
                 </td>
@@ -730,6 +746,7 @@
                 <td>Rin Tohsaka</td>
                 <td id="barplot-archer-fsn">
                   <script>
+                    var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E", "0":"??"};
                     var data = [{"name":"NP", "value":0}, {"name":"Luck", "value":1}, {"name":"Mana", "value":4}, {"name":"Agility", "value":3}, {"name":"Endurance", "value":3},{"name":"Strength", "value":4}];
                     var margin = {
                         top: 15,
@@ -786,7 +803,8 @@
                             return x(d.value) + 3;
                         })
                         .text(function (d) {
-                            return d.value;
+                            // return d.value;
+                            return plevel_dict[d.value]
                         });
                   </script>
                 </td>
@@ -800,6 +818,7 @@
                 <td>Sakura Matou > Shinji Matou</td>
                 <td id="barplot-rider-fsn">
                   <script>
+                    var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                     var data = [{"name":"NP", "value":5.5}, {"name":"Luck", "value":2}, {"name":"Mana", "value":4}, {"name":"Agility", "value":4}, {"name":"Endurance", "value":1},{"name":"Strength", "value":3}];
                     var margin = {
                         top: 15,
@@ -856,7 +875,8 @@
                             return x(d.value) + 3;
                         })
                         .text(function (d) {
-                            return d.value;
+                            // return d.value;
+                            return plevel_dict[d.value]
                         });
                   </script>
                 </td>
@@ -872,6 +892,7 @@
                 <td>Bazett Fraga Mcremitz > Kirei Kotomine</td>
                 <td id="barplot-lancer-fsn">
                   <script>
+                    var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                     var data = [{"name":"NP", "value":4}, {"name":"Luck", "value":1}, {"name":"Mana", "value":3}, {"name":"Agility", "value":5}, {"name":"Endurance", "value":3},{"name":"Strength", "value":4}];
                     var margin = {
                         top: 15,
@@ -928,7 +949,8 @@
                             return x(d.value) + 3;
                         })
                         .text(function (d) {
-                            return d.value;
+                            // return d.value;
+                            return plevel_dict[d.value]
                         });
                   </script>
                 </td>
@@ -944,6 +966,7 @@
                 <td>Soichiro Kuzuki</td>
                 <td id="barplot-caster-fsn">
                   <script>
+                    var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                     var data = [{"name":"NP", "value":3}, {"name":"Luck", "value":4}, {"name":"Mana", "value":5.5}, {"name":"Agility", "value":3}, {"name":"Endurance", "value":2},{"name":"Strength", "value":1}];
                     var margin = {
                         top: 15,
@@ -1000,7 +1023,8 @@
                             return x(d.value) + 3;
                         })
                         .text(function (d) {
-                            return d.value;
+                            // return d.value;
+                            return plevel_dict[d.value]
                         });
                   </script>
                 </td>
@@ -1014,6 +1038,7 @@
                 <td>Caster</td>
                 <td id="barplot-assassin-fsn">
                   <script>
+                    var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E", "0":"??"};
                     var data = [{"name":"NP", "value":0}, {"name":"Luck", "value":5}, {"name":"Mana", "value":1}, {"name":"Agility", "value":5.5}, {"name":"Endurance", "value":1},{"name":"Strength", "value":3}];
                     var margin = {
                         top: 15,
@@ -1070,7 +1095,8 @@
                             return x(d.value) + 3;
                         })
                         .text(function (d) {
-                            return d.value;
+                            // return d.value;
+                            return plevel_dict[d.value]
                         });
                   </script>
                 </td>
@@ -1084,6 +1110,7 @@
                 <td>Illyasviel Einzbern</td>
                 <td id="barplot-berserker-fsn">
                   <script>
+                    var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                     var data = [{"name":"NP", "value":5}, {"name":"Luck", "value":4}, {"name":"Mana", "value":5}, {"name":"Agility", "value":5}, {"name":"Endurance", "value":5},{"name":"Strength", "value":5.5}];
                     var margin = {
                         top: 15,
@@ -1140,7 +1167,8 @@
                             return x(d.value) + 3;
                         })
                         .text(function (d) {
-                            return d.value;
+                            // return d.value;
+                            return plevel_dict[d.value]
                         });
                   </script>
                 </td>
@@ -1220,6 +1248,7 @@
                     <td>Gordes Musik Yggdmillennia</td>
                     <td id="barplot-saber-black">
                       <script>
+                        var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                         var data= [{"name":"NP", "value":5}, {"name":"Luck", "value":1}, {"name":"Mana", "value":3}, {"name":"Agility", "value":4}, {"name":"Endurance", "value":5},{"name":"Strength", "value":4.5}];
                         var margin = {
                             top: 15,
@@ -1274,7 +1303,8 @@
                                 return x(d.value) + 3;
                             })
                             .text(function (d) {
-                                return d.value;
+                                // return d.value;
+                                return plevel_dict[d.value]
                             });
                       </script>
                     </td>
@@ -1302,6 +1332,7 @@
                     <td>Fiore Forvedge Yggdmillennia</td>
                     <td id="barplot-archer-black">
                       <script>
+                        var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                         var data = [{"name":"NP", "value":5}, {"name":"Luck", "value":3}, {"name":"Mana", "value":4}, {"name":"Agility", "value":5.5}, {"name":"Endurance", "value":4},{"name":"Strength", "value":4}];
                         var margin = {
                             top: 15,
@@ -1356,7 +1387,8 @@
                                 return x(d.value) + 3;
                             })
                             .text(function (d) {
-                                return d.value;
+                                // return d.value;
+                                return plevel_dict[d.value]
                             });
                       </script>
                     </td>
@@ -1381,6 +1413,7 @@
                     <td>Celenike Icecolle Yggdmillennia</td>
                     <td id="barplot-rider-black"></td>
                     <script>
+                    var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                       var data = [{"name":"NP", "value":3}, {"name":"Luck", "value":6}, {"name":"Mana", "value":3}, {"name":"Agility", "value":4}, {"name":"Endurance", "value":2},{"name":"Strength", "value":2}];
                       var margin = {
                           top: 15,
@@ -1435,7 +1468,8 @@
                               return x(d.value) + 3;
                           })
                           .text(function (d) {
-                              return d.value;
+                            //   return d.value;
+                            return plevel_dict[d.value]
                           });
                     </script>
                    
@@ -1464,6 +1498,7 @@
                     <td>Darnic Prestone Yggdmillennia</td>
                     <td id="barplot-lancer-black">
                       <script>
+                        var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                         var data = [{"name":"NP", "value":5}, {"name":"Luck", "value":2}, {"name":"Mana", "value":5}, {"name":"Agility", "value":5}, {"name":"Endurance", "value":4},{"name":"Strength", "value":4}];
                         var margin = {
                             top: 15,
@@ -1518,7 +1553,8 @@
                                 return x(d.value) + 3;
                             })
                             .text(function (d) {
-                                return d.value;
+                                // return d.value;
+                                return plevel_dict[d.value]
                             });
                       </script>
                     </td>
@@ -1546,6 +1582,7 @@
                     <td>Roche Frain Yggdmillennia</td>
                     <td id="barplot-caster-black">
                       <script>
+                        var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                         var data = [{"name":"NP", "value":5.5}, {"name":"Luck", "value":4}, {"name":"Mana", "value":5}, {"name":"Agility", "value":2}, {"name":"Endurance", "value":1},{"name":"Strength", "value":1}];
                         var margin = {
                             top: 15,
@@ -1600,7 +1637,8 @@
                                 return x(d.value) + 3;
                             })
                             .text(function (d) {
-                                return d.value;
+                                // return d.value;
+                                return plevel_dict[d.value]
                             });
                       </script>
                     </td>
@@ -1625,6 +1663,7 @@
                     <td>Reika Rikudou</td>                    
                     <td id="barplot-assassin-black">
                       <script>
+                        var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                         var data = [{"name":"NP", "value":3}, {"name":"Luck", "value":1}, {"name":"Mana", "value":3}, {"name":"Agility", "value":5}, {"name":"Endurance", "value":3},{"name":"Strength", "value":3}];
                         var margin = {
                             top: 15,
@@ -1679,7 +1718,8 @@
                                 return x(d.value) + 3;
                             })
                             .text(function (d) {
-                                return d.value;
+                                // return d.value;
+                                return plevel_dict[d.value]
                             });
                       </script>
                     </td>
@@ -1706,6 +1746,7 @@
                     <td>Caules Forvedge Yggdmillennia</td>                    
                     <td id="barplot-berserker-black">
                       <script>
+                        var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                         var data = [{"name":"NP", "value":3}, {"name":"Luck", "value":4}, {"name":"Mana", "value":2}, {"name":"Agility", "value":2}, {"name":"Endurance", "value":4},{"name":"Strength", "value":3}];
                         var margin = {
                             top: 15,
@@ -1760,7 +1801,8 @@
                                 return x(d.value) + 3;
                             })
                             .text(function (d) {
-                                return d.value;
+                                // return d.value;
+                                return plevel_dict[d.value]
                             });
                       </script>
                     </td>
@@ -1802,6 +1844,7 @@
                     <td>Kairi Sisigou</td>
                     <td id="barplot-saber-red">
                       <script>
+                        var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                         var data = [{"name":"NP", "value":5}, {"name":"Luck", "value":2}, {"name":"Mana", "value":4}, {"name":"Agility", "value":4}, {"name":"Endurance", "value":5},{"name":"Strength", "value":4.5}];
                         var margin = {
                             top: 15,
@@ -1856,7 +1899,8 @@
                                 return x(d.value) + 3;
                             })
                             .text(function (d) {
-                                return d.value;
+                                // return d.value;
+                                return plevel_dict[d.value]
                             });
                       </script>
                     </td>
@@ -1885,6 +1929,7 @@
                     <td>Shirou Kotomine</td>    
                     <td id="barplot-archer-red">
                       <script>
+                        var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                         var data = [{"name":"NP", "value":3}, {"name":"Luck", "value":3}, {"name":"Mana", "value":4}, {"name":"Agility", "value":5}, {"name":"Endurance", "value":1},{"name":"Strength", "value":2}];                
                         var margin = {
                             top: 15,
@@ -1939,7 +1984,8 @@
                                 return x(d.value) + 3;
                             })
                             .text(function (d) {
-                                return d.value;
+                                // return d.value;
+                                return plevel_dict[d.value]
                             });
                       </script>
                     <td>1. Phoebus Catastrophe: Complaint Message on the Arrow, sending complaint letter affixed to an arrow sent by to seek divine protection from Sun God Apollo, god of the bow and arrow, and goddess of the hunt, and cause a calamity equated to their protection to the enemy.[Anti-Army]<br>
@@ -1965,6 +2011,7 @@
                     <td>Shirou Kotomine</td>
                     <td id="barplot-rider-red">
                       <script>
+                        var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                         var data = [{"name":"NP", "value":5.5}, {"name":"Luck", "value":2}, {"name":"Mana", "value":3}, {"name":"Agility", "value":5.5}, {"name":"Endurance", "value":5},{"name":"Strength", "value":4.5}];
                         var margin = {
                             top: 15,
@@ -2019,7 +2066,8 @@
                                 return x(d.value) + 3;
                             })
                             .text(function (d) {
-                                return d.value;
+                                // return d.value;
+                                return plevel_dict[d.value]
                             });
                       </script>
                     </td>
@@ -2048,6 +2096,7 @@
                     <td> Shirou Kotomine</td>                    
                     <td id="barplot-lancer-red">
                       <script>
+                        var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                         var data = [{"name":"NP", "value":7}, {"name":"Luck", "value":2}, {"name":"Mana", "value":4}, {"name":"Agility", "value":5}, {"name":"Endurance", "value":3},{"name":"Strength", "value":4}];
                         var margin = {
                             top: 15,
@@ -2102,7 +2151,8 @@
                                 return x(d.value) + 3;
                             })
                             .text(function (d) {
-                                return d.value;
+                                // return d.value;
+                                return plevel_dict[d.value]
                             });
                       </script>
                     </td>
@@ -2130,6 +2180,7 @@
                     <td>Shirou Kotomine</td>
                     <td id="barplot-caster-red">
                       <script>
+                        var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.75":"C++","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                         var data = [{"name":"NP", "value":3.5}, {"name":"Luck", "value":4}, {"name":"Mana", "value":3.75}, {"name":"Agility", "value":2}, {"name":"Endurance", "value":1},{"name":"Strength", "value":1}];
                         var margin = {
                             top: 15,
@@ -2139,7 +2190,7 @@
                         };
                         var width = 200 - margin.left - margin.right,
                             height = 120 - margin.top - margin.bottom;
-                        var svg = d3.select("#barplot-caster-red").append("svg") // "#" + div_id
+                        var svg = d3.select("#barplot-caster-red").append("svg")
                             .attr("width", width + margin.left + margin.right)
                             .attr("height", height + margin.top + margin.bottom)
                             .append("g")
@@ -2184,7 +2235,8 @@
                                 return x(d.value) + 3;
                             })
                             .text(function (d) {
-                                return d.value;
+                                // return d.value;
+                                return plevel_dict[d.value]
                             });
                       </script>
                     </td>
@@ -2209,6 +2261,7 @@
                     <td>Shirou Kotomine</td>                    
                     <td id=barplot-assassin-red>
                       <script>
+                        var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                         var data = [{"name":"NP", "value":4}, {"name":"Luck", "value":5}, {"name":"Mana", "value":5}, {"name":"Agility", "value":2}, {"name":"Endurance", "value":2},{"name":"Strength", "value":1}];
                         var margin = {
                             top: 15,
@@ -2263,7 +2316,8 @@
                                 return x(d.value) + 3;
                             })
                             .text(function (d) {
-                                return d.value;
+                                // return d.value;
+                                return plevel_dict[d.value]
                             });
                       </script>
                     </td>
@@ -2290,6 +2344,7 @@
                     <td>-</td>                    
                     <td id=barplot-berserker-red>
                       <script>
+                        var plevel_dict = {"7":"EX","6":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
                         var data = [{"name":"NP", "value":3}, {"name":"Luck", "value":2}, {"name":"Mana", "value":1}, {"name":"Agility", "value":2}, {"name":"Endurance", "value":7},{"name":"Strength", "value":5}];
                         var margin = {
                             top: 15,
@@ -2344,7 +2399,8 @@
                                 return x(d.value) + 3;
                             })
                             .text(function (d) {
-                                return d.value;
+                                // return d.value;
+                                return plevel_dict[d.value]
                             });
                       </script>
                     </td>

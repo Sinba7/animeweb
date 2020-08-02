@@ -1,4 +1,6 @@
 
+var plevel_dict = {"7":"EX","5.75":"A++","5.5":"A+","5":"A","4.5":"B+","4":"B","3.5":"C+","3":"C","2.5":"D+","2":"D","1.5":"E","1":"E"};
+
 var section0 = document.getElementById('fate-list'),
     section1 = document.getElementById('fate-zero'),
     section2 = document.getElementById('fate-stay-night'),
