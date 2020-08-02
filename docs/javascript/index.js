@@ -1,6 +1,4 @@
 
-// document.getElementById(date).innerHTML = new Date().toDateString();
-
 var tab1 = document.getElementById('tab1'),
   tab2 = document.getElementById('tab2'),
   tab3 = document.getElementById('tab3'),
@@ -17,20 +15,20 @@ var tab1 = document.getElementById('tab1'),
   c7 = document.getElementById('c7');
 
 function changeTab1() {
-  tab1.className = 'selected';
-  tab2.className = '';
-  tab3.className = '';
-  tab4.className = '';
-  tab5.className = '';
-  tab6.className = '';
-  tab7.className = '';
-  c1.className = 'show'
-  c2.className = '';
-  c3.className = '';
-  c4.className = '';
-  c5.className = '';
-  c6.className = '';
-  c7.className = '';
+    tab1.className = 'selected';
+    tab2.className = '';
+    tab3.className = '';
+    tab4.className = '';
+    tab5.className = '';
+    tab6.className = '';
+    tab7.className = '';
+    c1.className = 'show';
+    c2.className = '';
+    c3.className = '';
+    c4.className = '';
+    c5.className = '';
+    c6.className = '';
+    c7.className = '';
 }
 
 function changeTab2() {
@@ -41,7 +39,7 @@ function changeTab2() {
     tab5.className = '';
     tab6.className = '';
     tab7.className = '';
-    c1.className = ''
+    c1.className = '';
     c2.className = 'show';
     c3.className = '';
     c4.className = '';
@@ -58,7 +56,7 @@ function changeTab3() {
     tab5.className = '';
     tab6.className = '';
     tab7.className = '';
-    c1.className = ''
+    c1.className = '';
     c2.className = '';
     c3.className = 'show';
     c4.className = '';
@@ -75,7 +73,7 @@ function changeTab4() {
     tab5.className = '';
     tab6.className = '';
     tab7.className = '';
-    c1.className = ''
+    c1.className = '';
     c2.className = '';
     c3.className = '';
     c4.className = 'show';
@@ -92,7 +90,7 @@ function changeTab5() {
     tab5.className = 'selected';
     tab6.className = '';
     tab7.className = '';
-    c1.className = ''
+    c1.className = '';
     c2.className = '';
     c3.className = '';
     c4.className = '';
@@ -109,7 +107,7 @@ function changeTab6() {
     tab5.className = '';
     tab6.className = 'selected';
     tab7.className = '';
-    c1.className = ''
+    c1.className = '';
     c2.className = '';
     c3.className = '';
     c4.className = '';
@@ -126,7 +124,7 @@ function changeTab7() {
     tab5.className = '';
     tab6.className = '';
     tab7.className = 'selected';
-    c1.className = ''
+    c1.className = '';
     c2.className = '';
     c3.className = '';
     c4.className = '';
@@ -151,20 +149,20 @@ var tab1_r = document.getElementById('tab1-r'),
   c7_r = document.getElementById('c7-r');
 
 function changeTabRed1() {
-  tab1_r.className = 'selected-red';
-  tab2_r.className = '';
-  tab3_r.className = '';
-  tab4_r.className = '';
-  tab5_r.className = '';
-  tab6_r.className = '';
-  tab7_r.className = '';
-  c1_r.className = 'show'
-  c2_r.className = '';
-  c3_r.className = '';
-  c4_r.className = '';
-  c5_r.className = '';
-  c6_r.className = '';
-  c7_r.className = '';
+    tab1_r.className = 'selected-red';
+    tab2_r.className = '';
+    tab3_r.className = '';
+    tab4_r.className = '';
+    tab5_r.className = '';
+    tab6_r.className = '';
+    tab7_r.className = '';
+    c1_r.className = 'show';
+    c2_r.className = '';
+    c3_r.className = '';
+    c4_r.className = '';
+    c5_r.className = '';
+    c6_r.className = '';
+    c7_r.className = '';
 }
 
 function changeTabRed2() {
@@ -175,7 +173,7 @@ function changeTabRed2() {
     tab5_r.className = '';
     tab6_r.className = '';
     tab7_r.className = '';
-    c1_r.className = ''
+    c1_r.className = '';
     c2_r.className = 'show';
     c3_r.className = '';
     c4_r.className = '';
@@ -192,7 +190,7 @@ function changeTabRed3() {
     tab5_r.className = '';
     tab6_r.className = '';
     tab7_r.className = '';
-    c1_r.className = ''
+    c1_r.className = '';
     c2_r.className = '';
     c3_r.className = 'show';
     c4_r.className = '';
@@ -209,7 +207,7 @@ function changeTabRed4() {
     tab5_r.className = '';
     tab6_r.className = '';
     tab7_r.className = '';
-    c1_r.className = ''
+    c1_r.className = '';
     c2_r.className = '';
     c3_r.className = '';
     c4_r.className = 'show';
@@ -226,7 +224,7 @@ function changeTabRed5() {
     tab5_r.className = 'selected-red';
     tab6_r.className = '';
     tab7_r.className = '';
-    c1_r.className = ''
+    c1_r.className = '';
     c2_r.className = '';
     c3_r.className = '';
     c4_r.className = '';
@@ -243,7 +241,7 @@ function changeTabRed6() {
     tab5_r.className = '';
     tab6_r.className = 'selected-red';
     tab7_r.className = '';
-    c1_r.className = ''
+    c1_r.className = '';
     c2_r.className = '';
     c3_r.className = '';
     c4_r.className = '';
@@ -260,7 +258,7 @@ function changeTabRed7() {
     tab5_r.className = '';
     tab6_r.className = '';
     tab7_r.className = 'selected-red';
-    c1_r.className = ''
+    c1_r.className = '';
     c2_r.className = '';
     c3_r.className = '';
     c4_r.className = '';
